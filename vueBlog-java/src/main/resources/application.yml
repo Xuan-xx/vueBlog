@@ -1,0 +1,25 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 'password'
+
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: localhost:6379
+    password: 'password'
+
+config:
+  jwt:
+    secret: fddsaf234sdadsg
+    expire: 7
+    header: token
+
+server:
+  servlet:
+    context-path: '/vblog'
+    application-display-name: 'vueblog'
+  port: 8081
